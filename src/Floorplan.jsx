@@ -1,12 +1,22 @@
 import Kitchen from "./Kitchen"
+import Bedroom from "./Bedroom"
+import LivingRoom from "./LivingRoom"
+import Bathroom from "./Bathroom"
 
-function Floorplan (pros){
+
+function Floorplan (props){
   return(
     <>
-    <h1>This is a house</h1>
-    <h2>
+    <div className="Floorplan">
+      <Bedroom bedNum={1}/>
       < Kitchen/> 
-    </h2>
+      <Bedroom bedNum={3}/>
+      < LivingRoom/>
+      < Bathroom size={'full'}/>
+      < Bathroom size={'half'}/>
+      <Bedroom bedNum={2}/>
+    </div>
+
     </>
   )
 }

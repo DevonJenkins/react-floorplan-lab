@@ -3,15 +3,18 @@ import './App.css';
 import Floorplan from './Floorplan';
 
 function App() {
+
+  const bedrooms = [ 
+    {bedNum: 1},
+    {bedNum: 2},
+    {bedNum: 3},
+]
+
   return (
     <>
-
       <h1>This is an app</h1>
-      <h1>
-        <Floorplan />
-      </h1>
+      <Floorplan/>      
     </>
-    
   );
 }
 

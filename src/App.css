@@ -1,13 +1,85 @@
-html, body {
-  height: 100%;
-  font: 1rem sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ body {
+  color: white; 
+  padding: 0px;
+  background:#F5CDA7;
 }
 
 div {
   border: 1px solid grey;
-  margin: 5px;
+  
   padding: 5px;
+}
+
+.bedroom{
+  background: purple;
+}
+
+.Floorplan{
+  background: teal; 
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 30% 20% 50%;
+  grid-template-areas: "bed-1 living-room kitchen"
+                        "bath-2 living-room kitchen"
+                        "bed-2 bath-1 bed-3";
+}
+
+.kitchen{
+  background: orange;
+  grid-area: kitchen;
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+}
+
+.Oven{
+  background: cyan;
+  color: gray;
+  margin: 0%;
+  width: 10%;
+  align-self: start;
+  justify-self: ;
+}
+
+.Sink {
+  background: red;
+  margin: 0%;
+  color: black;
+  width: 10%;
+  align-self: start;
+  justify-self: ;
+}
+
+.Living-Room{
+  background: gold;
+  color: gray;
+  grid-area: living-room;
+  height: 20vh;
+
+}
+
+.Bathroom{
+  background: linear-gradient(120deg, #75dbcd, #C9DBBA, #DCDBA8, #F5CDA7, #FAA381);
+}
+
+#bed-1{
+  color:rgb(30, 254, 254);
+  grid-area: bed-1;
+}
+#bed-2{
+  color:rgb(30, 254, 254);
+  grid-area: bed-2;
+}
+#bed-3{
+  color:rgb(30, 254, 254);
+  grid-area: bed-3;
+  height: 20vh;
+}
+
+#bath-full{
+  grid-area: bath-1;
+  height: 20vh;
+}
+#bath-half{
+  grid-area: bath-2;
 }
